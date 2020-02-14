@@ -4,7 +4,7 @@
  box-sizing: border-box;
  font-family: sans-serif;
 }
-.chair{
+.chair ,.sofa{
 height: 60%;
 position: absolute;
 top: 70%;
@@ -21,7 +21,7 @@ position: absolute;
 top: 20%;
 left: 50%;
 transform: translate(-50%, -20%);
-background: linear-gradient(to left, #87c7df, #648896);
+background: linear-gradient(to left, #303030, #414141);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
@@ -34,7 +34,19 @@ background: linear-gradient(to left, #303030, #414141);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
-.description{
+.s3 h1{
+font-size: 48px;
+background: linear-gradient(to left, #303030, #414141);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.s4 h1{
+    font-size: 48px;
+    background: linear-gradient(to left, #303030, #414141);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+.description, .description-closet{
 margin: 20%;
 width: 50%;
 margin-left: 5%;
@@ -42,4 +54,22 @@ font-size: 20px;
 }
 .description p{
 margin: 50px 0;
+}
+.description-closet p{
+margin: 50px auto;
+}
+.closet{
+height: 55%;
+position: absolute;
+top: 70%;
+left: 30%;
+transform: translate(-30%, -70%);
+}
+.description-closet{
+    float: right;
+ margin-right: 5%;
+}
+.sofa{
+height: 70%;
+top: 45%;
 }

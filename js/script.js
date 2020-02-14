@@ -1,5 +1,4 @@
 new fullpage('#fullpage', {
-    autoScrolling: true,
     navigation: true,
     onLeave: (origin,destination, direction) =>{
     const section = destination.item;
@@ -18,5 +17,22 @@ new fullpage('#fullpage', {
     .fromTo(chairs[1], 1, {opacity: 0},{opacity: 1})
     .fromTo(chairs[2], 1, {opacity: 0},{opacity: 1})
     }
+    else if(destination.index === 2){
+
+    const closet = document.querySelector(".closet");
+    const closetDescription = document.querySelector(".description-closet")
+
+    tl.fromTo(closet, 0.7, {x:"-100%", opacity: 0}, {x: "-70%", opacity: 1})
+    .fromTo(closetDescription, 0.5, {y: "50", opacity: 0}, {y:0, opacity: 1})
     }
+    else if(destination.index === 3){
+
+        const sofa = document.querySelector(".sofa");
+        const sofaDescription = document.querySelector(".description-sofa");
+
+        tl.fromTo(sofa, 0.7, {x: "100%"}, {x: "-40%"})
+        .fromTo(sofaDescription, 0.5, {y: "50", opacity: 0}, {y:0, opacity: 1})
+        }
+    }
+
     });
